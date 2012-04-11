@@ -1,0 +1,18 @@
+{
+	"purchases":{	
+	"throwable":
+		[
+			{"id": "default",	"title":"Standard Ball", 	"cost":0, "purchaseId":"", "prefabId":"", "shotCount":1, "icon": "default", "description":"Your default shot." },
+			{"id": "fastball",	"title":"Fast Ball", 		"cost":0, "purchaseId":"", "prefabId":"", "shotCount":1, "icon": "default", "description":"moves must faster and is not effected by gravity." },
+			{"id": "slowball",	"title":"Slow Ball", 		"cost":0, "purchaseId":"", "prefabId":"", "shotCount":1, "icon": "default", "description":"Your default shot" },
+			{"id": "largeball",	"title":"Large Ball", 		"cost":0, "purchaseId":"", "prefabId":"", "shotCount":1, "icon": "default", "description":"Your default shot" },
+			{"id": "giantball",	"title":"Giant Ball", 		"cost":0, "purchaseId":"", "prefabId":"", "shotCount":1, "icon": "default", "description":"Your default shot" },
+			{"id": "multiball",	"title":"Multi Ball",		"cost":0, "purchaseId":"", "prefabId":"", "shotCount":1, "icon": "default", "description":"Your default shot" },
+			{"id": "cube",		"title":"The Cube",			"cost":0, "purchaseId":"", "prefabId":"", "shotCount":1, "icon": "default", "description":"Your default shot" },
+			{"id": "capsule",	"title":"The Capsule",		"cost":0, "purchaseId":"", "prefabId":"", "shotCount":1, "icon": "default", "description":"Your default shot" },
+			{"id": "tyre",		"title":"The Tyre",			"cost":0, "purchaseId":"", "prefabId":"", "shotCount":1, "icon": "default", "description":"Your default shot" },
+			{"id": "plantpot",	"title":"The Plant Pot",	"cost":0, "purchaseId":"", "prefabId":"", "shotCount":1, "icon": "default", "description":"Your default shot" },
+			{"id": "teddy",		"title":"The Teddy",		"cost":0, "purchaseId":"", "prefabId":"", "shotCount":1, "icon": "default", "description":"Your default shot" }
+		]	
+	}
+}
