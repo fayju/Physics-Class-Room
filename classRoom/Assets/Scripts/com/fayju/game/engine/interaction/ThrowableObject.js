@@ -16,33 +16,22 @@ class ThrowableObject extends InteractiveGameObject{
 	
 		private var lastSwipe:float = 0; 
 		private var screenFactor:float = 1;
-		var throwStrength:float = 100.0;
-		var useColliderScale:boolean = false;
+		var power:float = 1.0;
+	 
 		protected var defaultRadius:float;
 		protected var defaultDist:float;
 		protected var sphereCol:SphereCollider;
 		protected var queueForce:boolean = false;
-		var hasTrail:boolean = false;
+ 		/*var hasTrail:boolean = false;
 		protected var trail:TyreTrack;
-		var orbTrack:String = "_OrbTrack1";
+		var orbTrack:String = "_OrbTrack1";*/
 		protected var throwDirection:Vector3;
 		function Start():void{
 			objTransform = transform;
  			cameraTransform =  Definitions.GetInstance().MainCamera().transform;
 			lastSwipe = Time.time;
 			screenFactor = Screen.width * 1.0 / 800.0;
-			if(useColliderScale){
-				sphereCol = gameObject.GetComponent(SphereCollider);
-				if(sphereCol){
-					defaultRadius= sphereCol.radius;
-					defaultDist =  Vector3.Distance(cameraTransform.position, transform.position );
-					UpdateCenter.DefaultCenter().addLateUpdateObject(gameObject);
-				}
-				
-			}
-			
-			
-			 
+				 /*
 			 		if(orbTrack != "" && hasTrail){
 						var tyre:GameObject = Instantiate(Resources.Load("_trails/"+orbTrack));
 						trail  = tyre.GetComponent(TyreTrack);
@@ -51,10 +40,7 @@ class ThrowableObject extends InteractiveGameObject{
 					 	//tyreTrack.maxdrawDistance =  tyreTrack.maxdrawDistance*scalar;
 						//hasTrail = true;
 					}
-				 
-
-					//hide until activated
-				
+				 */
 		}
 		function performLateUpdate():void{
 			
@@ -62,13 +48,7 @@ class ThrowableObject extends InteractiveGameObject{
 			var minRad:float = 3;
 			var maxRad:float = 50;
 			sphereCol.radius = Mathf.Clamp((defaultRadius)*dist/defaultDist, minRad, maxRad);
-			if(hasTrail){
-				 
-				//tyreTrack.tyreWidth =  myDrawWidth*trans.localScale.x;
-				trail.updateVerts(objTransform.position + Vector3(0,0,0) , objTransform.right );
-			}
 			
-			//
 		}
 		function onBeginTouch(io:InteractionObject):void{
 		
@@ -117,13 +97,12 @@ class ThrowableObject extends InteractiveGameObject{
 				throwDirection = v;
 				Debug.Log("thrown at "+v);
 				if(usePosition){
-					rb.AddForceAtPosition(v * 100*rb.mass, touchPosition);
+					rb.AddForceAtPosition(v * 100*rb.mass*power, touchPosition);
 			
-			}else{
-					rb.AddForce (v * 100*rb.mass);
-			}
-				//rb.AddForce (10000*v);*/// * throwStrength*rb.mass);
-				//rb.AddExplosionForce(v.magnitude*rb.mass*throwStrength, rb.position - v.normalized*3, 4);
+				}else{
+					rb.AddForce (v * 100*rb.mass*power);
+				}
+			 
 			}
 		}
 	
