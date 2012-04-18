@@ -127,7 +127,6 @@ class InteractiveScene extends MonoBehaviour{
  		if(remainingTouches.length >= 2){
 			//take the first two and check for pinch?
 		}
-
 		//check for pinching and override
 		//distribute to raycasters
 		if(useInterface){
@@ -138,7 +137,7 @@ class InteractiveScene extends MonoBehaviour{
 				remainingTouches = mainRayCastManager.updateTouch(remainingTouches);
 			}
 		}
-		
+		ProxyTouchManager.DefaultManager().setTouches(remainingTouches);
 		excessTouches =0;
 		//remaining begin touches
 		for(var rt:ProxyTouch in remainingTouches){

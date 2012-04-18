@@ -40,6 +40,18 @@ function touchCount():int
                return 0;
       
    }
+private var touchCache:ProxyTouch[];
+//ProxyTouchManager.DefaultManager().getTouches();
+function getTouches():ProxyTouch[]{
+	return touchCache;
+}
+//ProxyTouchManager.DefaultManager().setTouches(t);
+function setTouches(t:ProxyTouch[]){
+	touchCache = t;
+}
+function clearTouches(){
+	touchCache = new ProxyTouch[0];
+}
 function touches():ProxyTouch[]{
 	
 	
@@ -102,30 +114,21 @@ getTouches = true;
 	// = end here the device touc collection =
 	// =======================================
 	// =======================================
-	// = clear this below hen only on iphone =
+	// = clear this below when only on iphone =
 	// =======================================
 	
- 
 		if(touchCount() > 0 ){
 			var aTouch:ProxyTouch = getMouseTouch(0);
 			totalTouches.Add(aTouch); 
 		}
 		lastPos = Input.mousePosition;
-	 
+	
 	#if UNITY_STANDALONE_OSX
-	/*	if(touchCount() > 0 ){
-			var aTouch:ProxyTouch = getMouseTouch(0);
-			totalTouches.Add(aTouch); 
-		}
-		lastPos = Input.mousePosition;*/
+	
 		#endif
 		#if UNITY_EDITOR
-		/*	if(touchCount() > 0 ){
-				var aTouch:ProxyTouch = getMouseTouch(0);
-				totalTouches.Add(aTouch); 
-			}
-			lastPos = Input.mousePosition;*/
-			#endif
+		
+		 #endif
 	// =============================
 	// = allow the rest to run out =
 	// =============================		

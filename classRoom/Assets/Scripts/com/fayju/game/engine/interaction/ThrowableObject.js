@@ -143,9 +143,17 @@ class ThrowableObject extends InteractiveGameObject{
 
 						var launchVector:Vector3 = axisVector;
 						
-							var xang:float = screenFactor*(deltaLoc.x/sw)*180;
-							var maxAng:float = 60.0;
-							xang =Mathf.Clamp(xang, -maxAng, maxAng);
+							var xang:float = (deltaLoc.x/sw)*160;//*180;
+						/*	var xang:float;
+							if(deltaLoc.x < 0){
+									xang = -Mathf.Log((-deltaLoc.x+ 2)*60)*6;
+							}else{
+									xang = Mathf.Log((deltaLoc.x+ 2)*60)*6;
+							}*/
+						
+								Debug.Log("angle detected "+xang+" "+deltaLoc.x);
+							var maxAng:float = 45.0;
+						//	xang =Mathf.Clamp(xang, -maxAng, maxAng);
 						
 						var yang:float = -screenFactor*(deltaLoc.y/sh)*40;
 						var elevation:float;
