@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>com/fayju/game/engine/interaction/MaterialPainter.js</string>
+	<string>uk/co/gazbushell/interaction/buttonBehaviours/ResetSceneButton.js</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -221,181 +221,47 @@
 				<integer>8</integer>
 			</dict>
 		</dict>
-		<key>com/fayju/game/engine/interaction/DragableObject.js</key>
+		<key>com/fayju/game/engine/physicsControllers/ConveyorBelt.js</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>36</integer>
+				<integer>60</integer>
 				<key>line</key>
-				<integer>17</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>10</integer>
-		</dict>
-		<key>com/fayju/game/engine/interaction/MaterialPainter.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>28</integer>
+				<integer>34</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>com/fayju/game/engine/interaction/ProxyInteractiveObject.js</key>
+		<key>com/fayju/game/engine/physicsControllers/SpawnObjects.js</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>42</integer>
-				<key>line</key>
-				<integer>23</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>com/fayju/game/engine/interaction/RagDollInteraction.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>40</integer>
-				<key>line</key>
-				<integer>7</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>33</integer>
-				<key>line</key>
-				<integer>7</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>48</integer>
-				<key>line</key>
-				<integer>7</integer>
-			</dict>
-		</dict>
-		<key>com/fayju/game/engine/interaction/RepelantObject.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
 				<integer>30</integer>
+				<key>line</key>
+				<integer>18</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>8</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>305</integer>
-				<key>line</key>
-				<integer>30</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>30</integer>
-			</dict>
+			<integer>0</integer>
 		</dict>
-		<key>com/fayju/game/engine/interaction/SwipeRenderer.js</key>
+		<key>com/fayju/game/engine/physicsControllers/SpawnedObject.js</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>11</integer>
+				<integer>27</integer>
 				<key>line</key>
-				<integer>12</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>53</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>6</integer>
-				<key>line</key>
-				<integer>12</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>11</integer>
-				<key>line</key>
-				<integer>12</integer>
-			</dict>
-		</dict>
-		<key>com/fayju/game/engine/interaction/ThrowSwipeController.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>21</integer>
-				<key>line</key>
-				<integer>23</integer>
-			</dict>
-			<key>columnSelection</key>
-			<false/>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>65</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>14</integer>
-				<key>line</key>
-				<integer>23</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>21</integer>
-				<key>line</key>
-				<integer>23</integer>
-			</dict>
-		</dict>
-		<key>com/fayju/game/engine/interaction/ThrowableObject.js</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>42</integer>
-				<key>line</key>
-				<integer>145</integer>
+				<integer>16</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>109</integer>
+			<integer>0</integer>
 		</dict>
 		<key>uk/co/gazbushell/automated/IntervalRotation.js</key>
 		<dict>
@@ -440,6 +306,20 @@
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>9</integer>
+		</dict>
+		<key>uk/co/gazbushell/interaction/buttonBehaviours/ResetSceneButton.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>35</integer>
+				<key>line</key>
+				<integer>11</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
 		</dict>
 		<key>uk/co/gazbushell/interaction/iObjects/InteractiveGameObject.js</key>
 		<dict>
@@ -563,12 +443,11 @@
 	<key>openDocuments</key>
 	<array>
 		<string>com/fayju/game/RadDoll/RagDollController.js</string>
-		<string>com/fayju/game/engine/interaction/ThrowableObject.js</string>
-		<string>com/fayju/game/engine/interaction/MaterialPainter.js</string>
-		<string>com/fayju/game/engine/interaction/DragableObject.js</string>
 		<string>uk/co/gazbushell/interaction/iObjects/InteractiveGameObject.js</string>
-		<string>com/fayju/game/engine/interaction/RepelantObject.js</string>
-		<string>com/fayju/game/engine/interaction/ProxyInteractiveObject.js</string>
+		<string>com/fayju/game/engine/physicsControllers/ConveyorBelt.js</string>
+		<string>com/fayju/game/engine/physicsControllers/SpawnObjects.js</string>
+		<string>com/fayju/game/engine/physicsControllers/SpawnedObject.js</string>
+		<string>uk/co/gazbushell/interaction/buttonBehaviours/ResetSceneButton.js</string>
 		<string>uk/co/gazbushell/interaction/proxytouch/ProxyTouch.js</string>
 		<string>uk/co/gazbushell/interaction/RayCastManager.js</string>
 		<string>com/fayju/game/engine/ThrowEngine.js</string>
@@ -578,12 +457,9 @@
 		<string>uk/co/gazbushell/interaction/interactionObject.js</string>
 		<string>com/fayju/frogbox/objects/ExplodingObject.js</string>
 		<string>com/fayju/game/engine/CameraFollowObject.js</string>
-		<string>com/fayju/game/engine/interaction/SwipeRenderer.js</string>
 		<string>com/fayju/frogbox/objects/PhysicsObject.js</string>
 		<string>com/fayju/game/engine/AutoDestruction.js</string>
-		<string>com/fayju/game/engine/interaction/ThrowSwipeController.js</string>
 		<string>uk/co/gazbushell/interaction/proxytouch/ProxyTouchManager.js</string>
-		<string>com/fayju/game/engine/interaction/RagDollInteraction.js</string>
 		<string>SoundTrigger.js</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>

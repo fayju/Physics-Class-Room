@@ -9,10 +9,15 @@
 #pragma strict
 class ResetSceneButton extends DynamicTextRolloverButton{
 	private var isUsed:boolean = false;
+	public var goScene:String = "non";
 	function doAction():void{
 		if(!isUsed){
 			super.doAction();
-		 Application.LoadLevel(Application.loadedLevelName);
+			if(goScene == "non"){
+		 		Application.LoadLevel(Application.loadedLevelName);
+			}else{
+				Application.LoadLevel(goScene);
+			}
 			isUsed = true;
 
 		}
