@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>uk/co/gazbushell/interaction/buttonBehaviours/ResetSceneButton.js</string>
+	<string>com/fayju/game/engine/physicsControllers/ConveyorBelt.js</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -226,14 +226,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>60</integer>
+				<integer>19</integer>
 				<key>line</key>
-				<integer>34</integer>
+				<integer>19</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>8</integer>
 		</dict>
 		<key>com/fayju/game/engine/physicsControllers/SpawnObjects.js</key>
 		<dict>
@@ -465,6 +465,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{252, 109}, {1216, 1044}}</string>
+	<string>{{203, 39}, {1067, 739}}</string>
 </dict>
 </plist>

@@ -17,6 +17,7 @@ class ConveyorBelt extends MonoBehaviour{
  	public var fromSurface:boolean = false;
 	
 	function Start() {
+		displace.y = 0.2*speed;
 		surface = gameObject.GetComponentInChildren(MeshFilter) as MeshFilter;
 		offset = surface.renderer.material.mainTextureOffset; 
 	}	
