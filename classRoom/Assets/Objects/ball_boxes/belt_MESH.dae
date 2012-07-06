@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author></author>
+      <authoring_tool>FBX COLLADA exporter</authoring_tool>
+      <comments></comments>
+    </contributor>
+    <created>2012-04-18T13:40:25Z</created>
+    <keywords></keywords>
+    <modified>2012-04-18T13:40:25Z</modified>
+    <revision></revision>
+    <subject></subject>
+    <title></title>
+    <unit meter="0.010000" name="centimeter"></unit>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="psdFileTex2-image" name="psdFileTex2">
+      <init_from>file:///Users/harryjackson/Documents/gameProjects/GeekBeach/bashBlocks/AMonsterAteMy_2011 3/Assets/halsFolder/_platforms/objects/textures/convayorBelt_128_Diffuse.psd</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="belt_MAT" name="belt_MAT">
+      <instance_effect url="#belt_MAT-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="belt_MAT-fx" name="belt_MAT">
+      <profile_COMMON>
+        <technique sid="standard">
+          <lambert>
+            <emission>
+              <color sid="emission">0.000000  0.000000 0.000000 1.000000</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0.000000  0.000000 0.000000 1.000000</color>
+            </ambient>
+            <diffuse>
+              <texture texture="psdFileTex2-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <transparent opaque="RGB_ZERO">
+              <texture texture="psdFileTex2-image" texcoord="CHANNEL0">
+                <extra>
+                  <technique profile="MAYA">
+                    <wrapU sid="wrapU0">TRUE</wrapU>
+                    <wrapV sid="wrapV0">TRUE</wrapV>
+                    <blend_mode>NONE</blend_mode>
+                  </technique>
+                </extra>
+              </texture>
+            </transparent>
+            <transparency>
+              <float sid="transparency">1.000000</float>
+            </transparency>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="belt_MESH-lib" name="belt_MESHMesh">
+      <mesh>
+        <source id="belt_MESH-POSITION">
+          <float_array id="belt_MESH-POSITION-array" count="96">
+2.000000 -0.245318 44.056564
+2.000000 0.245318 44.056587
+-2.000000 0.245318 44.056587
+-2.000000 -0.245318 44.056564
+2.000000 1.000000 42.185184
+2.000000 1.000000 2.274588
+-2.000000 1.000000 2.274588
+-2.000000 1.000000 42.185184
+2.000000 0.245318 -26.102123
+2.000000 -0.245318 -26.102123
+-2.000000 -0.245318 -26.102123
+-2.000000 0.245318 -26.102123
+2.000000 -1.000000 -24.226473
+2.000000 -1.000000 -16.307949
+-2.000000 -1.000000 -16.307949
+-2.000000 -1.000000 -24.226473
+2.000000 -1.000000 42.185184
+2.000000 -0.707810 43.453186
+-2.000000 -0.707810 43.453186
+-2.000000 -1.000000 42.185184
+-2.000000 0.707810 43.453182
+2.000000 0.707810 43.453182
+2.000000 1.000000 -24.226473
+2.000000 0.707810 -25.494453
+-2.000000 0.707810 -25.494453
+-2.000000 1.000000 -24.226473
+-2.000000 -0.707810 -25.494453
+2.000000 -0.707810 -25.494453
+2.000000 -1.000000 2.274590
+-2.000000 -1.000000 2.274590
+2.000000 1.000000 -16.307959
+-2.000000 1.000000 -16.307959
+</float_array>
+          <technique_common>
+            <accessor source="#belt_MESH-POSITION-array" count="32" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="belt_MESH-Normal0">
+          <float_array id="belt_MESH-Normal0-array" count="96">
+0.000000 -0.442542 0.896748
+0.000000 0.442510 0.896764
+0.000000 0.442510 0.896764
+0.000000 -0.442542 0.896748
+0.000000 0.993595 0.112999
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 0.993595 0.112999
+0.000000 0.444053 -0.896000
+0.000000 -0.444053 -0.896000
+0.000000 -0.444053 -0.896000
+0.000000 0.444053 -0.896000
+0.000000 -0.993595 -0.113000
+0.000000 -1.000000 0.000000
+0.000000 -1.000000 0.000000
+0.000000 -0.993595 -0.113000
+0.000000 -0.993595 0.112998
+0.000000 -0.904654 0.426148
+0.000000 -0.904654 0.426148
+0.000000 -0.993595 0.112998
+0.000000 0.904658 0.426138
+0.000000 0.904658 0.426138
+0.000000 0.993595 -0.113000
+0.000000 0.905380 -0.424602
+0.000000 0.905380 -0.424602
+0.000000 0.993595 -0.113000
+0.000000 -0.905380 -0.424602
+0.000000 -0.905380 -0.424602
+0.000000 -1.000000 -0.000000
+0.000000 -1.000000 -0.000000
+0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000
+</float_array>
+          <technique_common>
+            <accessor source="#belt_MESH-Normal0-array" count="32" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="belt_MESH-UV0">
+          <float_array id="belt_MESH-UV0-array" count="96">
+0.025328 0.423031
+0.984399 0.423031
+0.984399 0.600319
+0.025328 0.600319
+0.025328 0.000000
+0.984399 0.000000
+0.984399 1.000800
+0.025328 1.000800
+0.025328 0.423031
+0.984399 0.423031
+0.984399 0.600319
+0.025328 0.600319
+0.025328 0.000000
+0.984399 0.000000
+0.984399 1.000800
+0.025328 1.000800
+0.025328 0.000000
+0.984399 0.000000
+0.984399 0.232367
+0.025328 0.232367
+0.984399 1.000800
+0.025328 1.000800
+0.025328 0.790982
+0.984399 0.790982
+0.025328 0.000000
+0.984399 0.000000
+0.984399 0.232367
+0.025328 0.232367
+0.984399 1.000800
+0.025328 1.000800
+0.025328 0.790982
+0.984399 0.790982
+0.025328 0.000000
+0.984399 0.000000
+0.984399 1.000800
+0.025328 1.000800
+0.025328 0.000000
+0.984399 0.000000
+0.984399 1.000800
+0.025328 1.000800
+0.025328 0.000000
+0.984399 0.000000
+0.984399 1.000800
+0.025328 1.000800
+0.025328 0.000000
+0.984399 0.000000
+0.984399 1.000800
+0.025328 1.000800
+</float_array>
+          <technique_common>
+            <accessor source="#belt_MESH-UV0-array" count="48" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="belt_MESH-VERTEX">
+          <input semantic="POSITION" source="#belt_MESH-POSITION"/>
+          <input semantic="NORMAL" source="#belt_MESH-Normal0"/>
+        </vertices>
+        <triangles count="32" material="belt_MAT">
+          <input semantic="VERTEX" offset="0" source="#belt_MESH-VERTEX"/>
+          <input semantic="TEXCOORD" offset="1" set="0" source="#belt_MESH-UV0"/>
+          <p> 1 2 2 3 3 0 1 2 3 0 0 1 4 5 5 6 7 4 7 4 5 6 6 7 9 10 10 11 11 8 9 10 11 8 8 9 14 15 15 12 13 14 13 14 15 12 12 13 17 18 18 19 19 16 17 18 19 16 16 17 20 22 21 23 4 20 20 22 4 20 7 21 25 24 22 25 23 26 25 24 23 26 24 27 12 28 15 29 26 30 12 28 26 30 27 31 0 1 3 0 18 19 0 1 18 19 17 18 2 3 1 2 21 23 2 3 21 23 20 22 24 27 23 26 8 9 24 27 8 9 11 8 27 31 26 30 10 11 27 31 10 11 9 10 19 35 29 32 16 34 16 34 29 32 28 33 29 39 14 36 28 38 28 38 14 36 13 37 30 41 22 42 31 40 31 40 22 42 25 43 5 45 30 46 6 44 6 44 30 46 31 47</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="" name="">
+      <node name="belt_MESH" id="belt_MESH" sid="belt_MESH">
+        <matrix sid="matrix">3.079226 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000 0.000000 0.000000 0.000000 0.000000 1.000000</matrix>
+        <instance_geometry url="#belt_MESH-lib">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="belt_MAT" target="#belt_MAT"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+        <extra>
+          <technique profile="FCOLLADA">
+            <visibility>1.000000</visibility>
+          </technique>
+        </extra>
+      </node>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>24.000000</frame_rate>
+        </technique>
+        <technique profile="FCOLLADA">
+          <start_time>0.041667</start_time>
+          <end_time>2.000000</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#"></instance_visual_scene>
+  </scene>
+</COLLADA>
+

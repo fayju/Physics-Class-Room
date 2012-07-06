@@ -11,13 +11,18 @@ class SpawnedObject extends MonoBehaviour{
 	private var spawnId;
 	private var spawner:SpawnObjects;
 	public var lifeTime:float = 20;
+	public var useLifeTime:boolean = true;
 	function init (_spawnId:String, _spawner:SpawnObjects) {
 		spawner = _spawner;
 		spawnId = _spawnId;
-		Invoke("remove", lifeTime);
+		if(useLifeTime){
+			Invoke("remove", lifeTime);
+		}
 	}
 	function remove() {
-		spawner.removeObject(spawnId);
+		if(useLifeTime){
+			spawner.removeObject(spawnId);
+		}
 	}
 	
  

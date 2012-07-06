@@ -22,7 +22,11 @@ class ThrowableObject extends InteractiveGameObject{
 		protected var defaultDist:float;
 		protected var sphereCol:SphereCollider;
 		protected var queueForce:boolean = false;
- 		/*var hasTrail:boolean = false;
+ 		
+
+
+		/*
+		var hasTrail:boolean = false;
 		protected var trail:TyreTrack;
 		var orbTrack:String = "_OrbTrack1";*/
 		protected var throwDirection:Vector3;

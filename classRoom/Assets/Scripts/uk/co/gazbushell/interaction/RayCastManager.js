@@ -7,7 +7,7 @@
 // 
 //needs to have a reference to the camera 
 // picks into the screen and sends interaction information into it
-
+#pragma strict
 class RayCastManager extends MonoBehaviour{
 
 	var interactionObjects:Array = new Array();
@@ -74,7 +74,6 @@ class RayCastManager extends MonoBehaviour{
 							//check for blank spot screen areas first
 							//eg temporary reset scenen bottom left
 						 makeHit = rayGrabItem(evt);//this is for picking up or detecting to pick up objects
-					
 					 
 					break;
 					case ProxyTouchPhase.Moved:
@@ -206,7 +205,7 @@ class RayCastManager extends MonoBehaviour{
 				io.beginTouch(evt);
 				interactionObjects.Add(io);
 				io.beginTouch(evt);
-			 
+//				Debug.Log("swipe detected");
 			}
 		}
 	}

@@ -79,8 +79,10 @@ class RepelantObject extends MonoBehaviour{
 	    for (var i = 0;i < hits.Length;i++) {
 	        var hit : RaycastHit = hits[i];
 	        var rigidbody =  hit.collider.rigidbody;
+			
 	        if (rigidbody) {
-	           var dist:float = hits[i].distance;
+				rigidbody.WakeUp();
+	           	var dist:float = hits[i].distance;
 				var fact:float = (radius - dist)/radius;
 				fact = Mathf.Clamp(fact, 0,1);
 				var diff:Vector3 = -myTrans.position + hits[i].point;

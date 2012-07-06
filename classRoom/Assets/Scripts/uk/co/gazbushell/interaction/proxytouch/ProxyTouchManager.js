@@ -5,6 +5,7 @@
 //  Created by Gareth Bushell on 2011-01-20.
 //  Copyright 2011 fayju. All rights reserved.
 // 
+#pragma strict
 enum ProxyTouchPhase
 {
 	Stationary,
@@ -114,21 +115,23 @@ getTouches = true;
 	// = end here the device touc collection =
 	// =======================================
 	// =======================================
-	// = clear this below when only on iphone =
+	// = clear this below hen only on iphone =
 	// =======================================
-	
+	var aTouch:ProxyTouch;
+	#if UNITY_STANDALONE_OSX
 		if(touchCount() > 0 ){
-			var aTouch:ProxyTouch = getMouseTouch(0);
+		aTouch = getMouseTouch(0);
 			totalTouches.Add(aTouch); 
 		}
 		lastPos = Input.mousePosition;
-	
-	#if UNITY_STANDALONE_OSX
-	
 		#endif
 		#if UNITY_EDITOR
-		
-		 #endif
+			if(touchCount() > 0 ){
+				aTouch = getMouseTouch(0);
+				totalTouches.Add(aTouch); 
+			}
+			lastPos = Input.mousePosition;
+			#endif
 	// =============================
 	// = allow the rest to run out =
 	// =============================		
